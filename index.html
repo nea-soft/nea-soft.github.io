@@ -1,0 +1,54 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="We create a first class applications, sites and designs. We will hear everyone and we'll recommend the best way, to make alive your idea." />
+    <meta name="robots" content="index, follow">
+    <meta name="keywords" content="HTML, CSS, JS, React, React.JS, Wordpress, Site, Sites, Landing, Landing Page, Application, Applications, Design, PSD to HTML, Create, Create site from scratch, Create wordpress site from scratch">
+    <title>NEA Soft - We Make Your Ideas Come True</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="head-text">
+            <img src="remade_1.png" alt="Logo">
+            <p class="head-text__title">We are currently working on something awesome. Stay tuned!</p>
+        </div>
+        <div class="contact-form">
+            <p class="contact-form__title">If you have project or proposition as for job for us, you can fill form below and get in touch with us</p>
+            <form id="register" role="form">
+                <label for="name"><input type="text" placeholder="Full Name" id="name" required></label>
+                <label for="theme"><input type="text" placeholder="Subject" id="theme" required></label>
+                <label for="mail"><input type="email" placeholder="Email" id="mail" required></label>
+                <label for="skype"><input type="text" placeholder="Skype" id="skype" required></label>
+                <label for="text"><textarea name="message" placeholder="Your Message" cols="30" rows="7" id="text" required></textarea></label>
+                <button id="singlebutton">Send</button>
+            </form>
+        </div>
+    </div>
+    <div id="screen"></div>
+    <div id="modal">
+        <div class="modal-header">
+            <button class="modal-header__btn">x</button>
+        </div>
+        <div class="modal-content">
+            <p>THANKS!</p>
+            <p>We got your message and will contact you as soon as possible</p>
+        </div>
+    </div>
+    <div id="screenError"></div>
+    <div id="modalError">
+        <div class="modal-header">
+            <button class="modal-header__btn">x</button>
+        </div>
+        <div class="modal-content">
+            <p>OOOOPS!</p>
+            <p>Something went wrong. Sorry for that, and please, try again.</p>
+        </div>
+    </div>
+    <script type='text/javascript' src="jquery.3.3.1.min.js"></script>
+    <script type='text/javascript' src="script.js"></script>
+</body>
+</html>
