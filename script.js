@@ -39,4 +39,9 @@ $(document).ready(function () {
         });
         return false;
     });
+
+    function changeWLP() {
+        $('body').css('background-image', 'url(http://placeimg.com/1920/1080/any)')
+    };
+    setTimeout(changeWLP, 1000);
 });
