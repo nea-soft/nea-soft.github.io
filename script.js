@@ -39,15 +39,4 @@ $(document).ready(function () {
         });
         return false;
     });
-
-    function changeWLP() {
-        let image1 = 'http://placeimg.com/1920/1080/any';
-        let image2 = 'http://placeimg.com/1920/1200/any';
-        let image3 = 'http://placeimg.com/1920/1050/any';
-        let randomImages = [image1, image2, image2];
-        randomNumber = Math.floor(Math.random() * 3);
-        randomImages[randomNumber];
-        $('body').css('background-image', 'url(' + randomImages+ ')');
-    };
-    setTimeout(changeWLP, 1000);
 });
