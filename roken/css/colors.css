@@ -1,0 +1,151 @@
+body{ background-color: rgb(255, 255, 255); }
+/*==================== Section 02 ====================*/
+.actionbar-block { background-color: rgb(19, 19, 19); }
+.actionbar-block__title{ color: rgb(255, 255, 255); }
+.actionbar-block__button {
+    color: rgb(255, 255, 255);
+    background-color: rgb(41, 192, 212);
+}
+.actionbar-block__button:hover{ color: rgb(210, 210, 210); }
+.actionbar-block__button::after {
+    border-top: 17px solid transparent;
+    border-bottom: 17px solid transparent;
+    border-left: 17px solid #121212;
+}
+/*==================== End Section 02 ====================*/
+/*====================== Section 03 ======================*/
+.services-block {
+    border-bottom: 3px solid rgb(191, 191, 191);
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 5px 5px 0 rgba(191, 191, 191, 0.75);
+}
+.services-block .slick-prev,
+.services-block .slick-next { background-color: rgb(19, 19, 19); }
+.services-block .slick-prev:hover,
+.services-block .slick-prev:focus,
+.services-block .slick-next:hover,
+.services-block .slick-next:focus { background: rgb(51,51,51); }
+.services-block__title{ color: rgb(19, 19, 19); }
+.services-block__subtitle{ color: rgb(41, 192, 212); }
+.services-block__text{ color: rgb(66, 66, 66); }
+.services-block__read{
+    color: rgb(255, 255, 255);
+    background-color: rgb(41, 192, 212);
+}
+.services-block__read:hover{ color: rgb(19, 19, 19); }
+.services-block__divider{ background-color: rgb(205, 205, 205); }
+.services-block__cards .cards-border{
+    border: 1px solid rgb(205, 205, 205);
+    background-color: rgb(255, 255, 255);
+}
+.cards-border__text{ color: rgb(66, 66, 66); }
+/*==================== End Section 03 ====================*/
+/*====================== Section 04 ======================*/
+.works-block{ border-bottom: 2px solid rgb(186, 186, 186); }
+.works-block__title{ color: rgb(19, 19, 19); }
+.works-block__preview{
+    border: 1px solid rgb(205, 205, 205);
+    background-color: rgb(255, 255, 255);
+}
+.works-block__name{ color: rgb(85, 85, 85); }
+.works-block .slick-prev, .works-block .slick-next { background-color: rgb(19, 19, 19); }
+.works-block .slick-prev:hover,
+.works-block .slick-prev:focus,
+.works-block .slick-next:hover,
+.works-block .slick-next:focus { background: rgb(51,51,51); }
+/*==================== End Section 04 ====================*/
+/*====================== Section 05 ======================*/
+.customers-block__title{ color: rgb(255, 255, 255); }
+.customers-block__amount{ color: rgb(41,192,212); }
+.customers-block__divider{ background-color: rgb(154, 154, 154); }
+.customers-block .slick-prev:before,
+.customers-block .slick-next:before { color: rgb(255, 255, 255); }
+/*==================== End Section 05 ====================*/
+/*====================== Section 06 ======================*/
+.blog-block__title{ color: rgb(19, 19, 19); }
+.blog-block__divider{ background-color: rgb(205, 205, 205); }
+.blog-block__posts{ background-color: #f8f8f8; }
+.post{ border: 1px solid #dcdcdc; }
+.post-date{ border: 1px solid #dcdcdc; }
+.post-date__num{
+    color: rgb(19, 19, 19);
+    background-color: rgb(255,255,255);
+}
+.post-date__month {
+    color: rgb(255, 255, 255);
+    background-color: rgb(41, 192, 212);
+}
+.vertical-divider{ border-left: 2px solid rgb(221, 221, 221); }
+.post-dscrpt__title { color: rgb(19, 19, 19); }
+.post-dscrpt__date{ color: rgb(85, 85, 85); }
+.blog-block__comments{ background-color: #f8f8f8; }
+.comment{ border: 1px solid #dcdcdc; }
+.comment-avatar{
+    background-color: rgb(255,255,255);
+    border: 1px solid #dcdcdc;
+}
+.person-name{ color: rgb(19, 19, 19); }
+.person-position{ color: rgb(41, 192, 212); }
+.comment-divider{ border-left: 2px solid rgb(221, 221, 221); }
+.comment-dscrpt__text{ color: rgb(85, 85, 85); }
+/*==================== End Section 06 ====================*/
+/*====================== Section 07 ======================*/
+.info-block{ background-color: rgb(41,192,212); }
+.info-block__title{ color: rgb(19, 19, 19); }
+.info-block__title span{ color: rgb(255, 255, 255); }
+.info-block__subtitle{ color: rgb(255, 255, 255); }
+.info-block__view{
+    color: rgb(255, 255, 255);
+    background-color: rgb(19, 19, 19);
+}
+.info-block__view:hover{ color: rgb(41, 192, 212); }
+/*==================== End Section 07 ====================*/
+/*====================== Section 08 ======================*/
+/*.contacts-block{ background-color: rgb(48,48,48); }*/
+.contacts-block{ background: linear-gradient(180deg, rgb(48,48,48) 15%, rgb(18, 18, 18) 15% ); }
+.contacts-dark-bg{ background-color: rgb(19,19,19); }
+.data-phone, .data-support,
+.data-mail, .data-hours{ color: rgb(255, 255, 255); }
+.data-phone:hover, .data-mail:hover{ color: rgb(49,192,212); }
+.data-phone, .data-support,.data-mail{ border-right: 1px solid rgb(102, 102, 102); }
+.dscrpt{ border-bottom: 2px solid rgb(51, 51, 51); }
+.dscrpt-content__title{ color: rgb(221, 221, 221); }
+.dscrpt-content__subtitle{ color: rgb(221, 221, 221); }
+.dscrpt-content::after {
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 15px solid #121212;
+}
+.social-twitter__title, .social-mail__title,
+.social-recent__title, .social-flickr__title{ color: rgb(255, 255, 255); }
+.social-twitter__text,.social-mail__text{ color: rgb(221, 221, 221); }
+.twitter-link, .tweet-day{ color: rgb(41,192,212); }
+.social-twitter .slick-dots li button:before { color: rgb(51,51,51); }
+.social-twitter .slick-dots li.slick-active button:before { color: rgb(40,188,193); }
+.input-group-prepend{ background-color: rgb(255,255,255); }
+.input-group .input-group-mail::placeholder{ color: rgb(19,19,19); }
+.input-group .input-group-text{
+    background-color: rgb(51,51,51);
+    color: rgb(255,255,255);
+}
+.input-group .input-group-text:hover{ color: rgb(41,192,212); }
+.social-recent__list li{ color: rgb(255, 255, 255); }
+.social-mail, .social-recent, .social-flickr{ border-left: 1px solid rgb(51,51,51); }
+/*==================== End Section 08 ====================*/
+/*======================== Footer ========================*/
+
+.footer-block{ background-color: rgb(51,51,51); }
+.footer-block__header{ color: rgb(255,255,255); }
+.footer-block__header span{ color: rgb(41, 192, 212); }
+.footer-block__pages .nav-item .nav-link{ color: rgb(221, 221, 221); }
+.footer-block__pages .nav-item .nav-link:hover{ color: rgb(41,192,212); }
+.footer-block__rights span{ color: rgb(255, 255, 255); }
+.footer-block__item{
+    background: rgb(102,102,102);
+    color: rgb(48,48,48);
+}
+.footer-block__item:hover{
+    color: rgb(48,48,48);
+    background-color: rgb(250,235,215);
+}
+/*====================== End Footer ======================*/
