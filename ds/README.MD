@@ -1,0 +1,1 @@
+Site for IT-company from Poland - **Dengo Systems**. Was created in summer 2015. For now, the company starts rebranding.
