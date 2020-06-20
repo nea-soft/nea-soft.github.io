@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Start A Project</title>
+    <link rel="shortcut icon" href="img/siteIcon.png" type="image/x-icon">
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,800,900,500,300,200,100,600,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,
+          500italic,700italic&subset=latin,cyrillic-ext,greek-ext,greek,latin-ext,cyrillic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/jquery.bxslider.css">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/media.css">
+
+    
+    <script src="js/jquery-1.11.3.min.js"></script>  
+    <script src="js/jquery.sticky.js"></script> 
+    <script src="js/jquery.bxslider.min.js"></script>
+    <script src="js/simplebox.js"></script>
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="js/script_project.js"></script>
+    <script src="js/bootstrap.min.js"></script> 
+    <script>
+    $(function() {
+    $( ".datepicker" ).datepicker();
+    $( ".datepicker" ).datepicker();
+    });
+    </script>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html"><img class='fr_bg' src="img/logo.png" alt="logo"></a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="menu collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="index.html#anchor_home">HOME</a></li>
+                    <li><a href="index.html#anchor_services">SERVICES</a></li>
+                    <li><a href="index.html#anchor_works">WORKS</a></li>
+                    <li><a href="index.html#anchor_clients">CLIENTS</a></li>
+                    <li><a href="contactUs.html">CONTACT US</a></li>
+                    <li><a href="project_page.html">START A PROJECT</a></li>
+                    <li class="dropdown" id="hideDr" style="left:50px">
+                    <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">EN<span class="caret"></span></a>
+                      <ul class="dropdown-menu">
+                        <li style="margin-right:3px;"><a href="#pl">PL</a></li>
+                        <li style="margin-right:1px;"><a href="#ua">UA</a></li>
+                        <li style="margin-right:1px;"><a href="#ru">RU</a></li>
+                      </ul>
+                    </li>
+                    <li class="noBord">
+                        <p style="padding-top:14px;" class="langHoverrr hidden-md hidden-lg">
+                            <a href="#en">EN</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+                            <a href="#pl">PL</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+                            <a href="#ua">UA</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+                            <a href="#ru">RU</a>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+    
+    <header class="first_bg_project">
+        <div class="container">
+            <div class="row resp">
+                 <div class="col-lg-12 text_fp_cont">
+                    <h1>LET’S MAKE SOMETHING GREAT TOGETHER</h1>
+                    <div class="our-line_contact"></div>
+                    <p>Looking to build something special with us? Great.</p>
+                    <p class="notMarginTop">Here's a few quick questions to get us going on the right track.</p>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+                <div class="col-lg-12 padNone mg_left our_service">
+                <div id="about" class="our_ser_st text-center-project">
+                    <span>STEP 1</span>
+                    <h3 style="margin-top: 6px !important;">SELECT TYPE OF A PROJECT</h3>
+                </div>
+                    <div class="col-lg-12 selectTypeProj">
+                        <div class="col-lg-2 col-lg-offset-2">
+                            <form id="sendData" action="">
+                                <input  id="checkBoxWeb-site" value="Website" type="checkbox">
+                                <label for="checkBoxWeb-site">Website</label>
+                        </div>
+                        <div class="col-lg-2">
+                                <input id="checkBoxMob" value="Mobile" type="checkbox">
+                                <label for="checkBoxMob">Mobile</label>
+                        </div>
+                        <div class="col-lg-2">
+                                <input id="checkBoxDesign" value="Design" type="checkbox">
+                                <label for="checkBoxDesign">Design</label>
+                        </div>
+                        <div class="col-lg-2">
+                                <input id="checkBoxOther" value="Other" type="checkbox">
+                                <label for="checkBoxOther">Other</label>
+                        </div>
+                    </div>
+                <div class="our_ser_st text-center-project">
+                    <span>STEP 2</span>
+                    <h3 style="margin-top: 6px !important;">TELL US ABOUT YOURSELF</h3>
+                </div>
+                <div class="our_ser_cont col-lg-12 mg_left"> 
+                    <div class="col-lg-3 col-lg-offset-1"><input type="text" id='name' placeholder="Your Name" /></div>
+                    <div class="col-lg-4 " ><input type="text" id="email" placeholder="Email address" /></div>
+                    <div class="col-lg-3" ><input type="text" id='skype' placeholder="Skype (optional)" /></div>
+                </div>
+                <div class="col-lg-12 txtArea"> 
+                    <div class="col-lg-7 col-lg-offset-1"> 
+                        <textarea name="" id="message" cols="30" rows="10" style="width: 100%; height:112px; margin-top: 21px; margin-bottom:42px;" placeholder="Describe the project, requirements and objectives (optional)."></textarea>
+                    </div>
+                    <div class="col-lg-3">
+                        <label class="upLabel" for="upBtn">Upload file here</label>
+                        <input id="upBtn" type="file">
+                    </div>
+                    <div class="col-lg-3">
+                        <input type="text" id='load' readonly="readonly" placeholder="Choose file or archive (optional)" />
+                        <span id='delFile'>X</span>
+                    </div>
+                </div>
+                <div class="our_ser_st text-center-project">
+                    <span>STEP 3</span>
+                    <h3 style="margin-top: 6px !important;">PROJECT TIMELINE AND BUDGET</h3>
+                </div>
+                <div class="col-lg-12"> 
+                    <div class="col-lg-5 col-lg-offset-1">
+                        <label class="changePrice">
+                            <select id="money">
+                            <option> up to 500$</option>
+                            <option> from 500$ to 1000$</option>
+                            <option> from 1000$ to 5000$</option>
+                            <option> more than 5000$</option>
+                            </select>
+                        </label>
+                    </div>
+                    <div class="col-lg-5 " ><input type="text" class="datepicker" id="start_data" placeholder="Start Date" />
+                        <input type="text" class="datepicker secondInputCal" id="end_date" placeholder="End Date" /></div>
+                </div>
+            
+            <div class="col-lg-12">
+                <div class="row-fluid">
+                    <div class="col-lg-4 "></div>
+                        <div class="col-lg-4 btnSubmit">
+                            <div class="submitBTN">
+                                </form>
+                                <input class="submitInputBtn" type="submit" id="submitData" value="LET'S DO IT TOGETHER">                               
+                            </div>
+                        </div>
+                    <div class="col-lg-4"></div>
+                </div>
+            </div>
+
+                <!-- Футер/ Footer -->
+            <div class="col-lg-12">
+                 <footer>
+                        <div id="anchor_contact">
+                           <ul class="footNav">
+                               <li><a href="index.html">HOME</a></li>
+                               <li>&nbsp;&nbsp;&nbsp; • &nbsp;&nbsp;&nbsp;</li>
+                               <li><a href="index.html#anchor_services">SERVICE</a></li>
+                               <li>&nbsp;&nbsp;&nbsp; • &nbsp;&nbsp;&nbsp;</li>
+                               <li><a href="index.html#anchor_works">WORKS</a></li>
+                               <li>&nbsp;&nbsp;&nbsp; • &nbsp;&nbsp;&nbsp;</li>
+                               <li><a href="index.html#anchor_clients">CLIENTS</a></li>
+<!--
+                               <li>&nbsp;&nbsp;&nbsp; • &nbsp;&nbsp;&nbsp;</li>
+                               <li><a href="index.html#anchor_about">ABOUT US</a></li>
+-->
+<!--
+                               <li>&nbsp;&nbsp;&nbsp; • &nbsp;&nbsp;&nbsp;</li>
+                               <li><a href="#anchor_team">TEAM</a></li>
+-->
+                               <li>&nbsp;&nbsp;&nbsp; • &nbsp;&nbsp;&nbsp;</li>
+                               <li><a href="contactUs.html">CONTACT US</a></li>
+                               <li>&nbsp;&nbsp;&nbsp; • &nbsp;&nbsp;&nbsp;</li>
+                               <li><a href="#">START A PROJECT</a></li>                                   
+                           </ul>
+
+                        </div>
+                        <div style="font: 18px Raleway-Light; padding-top:25px;padding-bottom: 20px;"><span >Connect with us</span></div>
+                        <div style="padding-bottom: 20px;"><span ><a href="dengo.systems@gmail.com">dengo.systems@gmail.com</a></span></div>
+                        <div style="font: 18px Raleway-Light; padding-top:15px; padding-bottom: 20px;"><span >Follow us</span></div>
+
+                        <div class="socialUS">
+                            <span class="icon-google-plus"></span>
+                            <span class="icon-facebook2"></span>
+                            <span class="icon-linkedin2"></span>
+                            <span class="icon-twitter"></span>
+                            <span class="icon-instagram"></span>
+                            <span class="icon-youtube3"></span>
+                        </div>
+                </footer>
+            </div>
+        </div>
+    
+    </body>
+</html>

@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us</title>
+    <link rel="shortcut icon" href="img/siteIcon.png" type="image/x-icon">
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,800,900,500,300,200,100,600,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,
+          500italic,700italic&subset=latin,cyrillic-ext,greek-ext,greek,latin-ext,cyrillic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/jquery.bxslider.css">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/media.css">
+    
+    <script src="js/jquery-1.11.3.min.js"></script>  
+    <script src="js/jquery.sticky.js"></script> 
+    <script src="js/jquery.bxslider.min.js"></script>
+    <script src="js/script_contact.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/simplebox.js"></script>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html"><img class='fr_bg' src="img/logo.png" alt="logo"></a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="menu collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="index.html#anchor_home">HOME</a></li>
+                    <li><a href="index.html#anchor_services">SERVICES</a></li>
+                    <li><a href="index.html#anchor_works">WORKS</a></li>
+                    <li><a href="index.html#anchor_clients">CLIENTS</a></li>
+                    <li><a href="contactUs.html">CONTACT US</a></li>
+                    <li><a href="project_page.html">START A PROJECT</a></li>
+                    <li class="dropdown" id="hideDr" style="left:50px">
+                    <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">EN<span class="caret"></span></a>
+                      <ul class="dropdown-menu">
+                        <li style="margin-right:3px;"><a href="#pl">PL</a></li>
+                        <li style="margin-right:1px;"><a href="#ua">UA</a></li>
+                        <li style="margin-right:1px;"><a href="#ru">RU</a></li>
+                      </ul>
+                    </li>
+                    <li class="noBord">
+                        <p style="padding-top:14px;" class="langHoverrr hidden-md hidden-lg">
+                            <a href="#en">EN</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+                            <a href="#pl">PL</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+                            <a href="#ua">UA</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+                            <a href="#ru">RU</a>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+    
+    <header class="first_bg_contact">
+        <div class="container">
+            <div class="row resp">
+                 <div class="col-lg-12 text_fp_cont">
+                    <h1>CONTACT US</h1>
+                    <div class="our-line_contact"></div>
+                    <p>Let’s Meet each other</p>
+                    <p class="notMarginTop">And Please stop torturing developers</p>
+                </div>
+            </div>
+        </div>
+    </header>
+        <div id="about" class="row resp">
+            <form id="sendContact" action="">
+            <div class="col-lg-12 padNone mg_left our_service">
+                
+                <div class="our_ser_sl text-center-contact">
+                    <h3 class="notMarginBottom">There’s nothing we love more than the infinite possibility of a</h3>
+                       <h3 class="notMarginTop"> brand new project. Let’s make something inspiring together.</h3>
+                </div>
+                
+                
+                <div class="our_ser_cont col-lg-12 mg_left"> 
+                    <div class="col-lg-5 col-lg-offset-1"><input type="text" id="name" placeholder="Your Name" /></div>
+                    <div class="col-lg-5"><input type="email" id="email" name="email" contextmenu="" placeholder="Email address" required/></div>
+                </div>
+                <div class=" col-lg-12 "> 
+                    <div class="col-lg-10 col-lg-offset-1"> <textarea name="" id="message" cols="30" rows="10" style="width: 100%; height:98px; margin-top: 21px;" placeholder="Message"></textarea></div>
+                </div>
+            </div>
+            </form>
+        </div>
+
+            <div class="col-lg-12 padNone">
+                <div class="row-fluid">
+                    <div class="col-lg-4 "></div>
+                    <div class="col-lg-4 btnSubmit">
+                        <div  class="submitBTN">
+                            <input id="submitContact" type="submit" value="SUBMIT NOW">
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                    </div>
+                </div>
+            </div>
+  <div class="col-lg-12 padNone mapOffices">
+                    <script src='https://maps.googleapis.com/maps/api/js?key=&sensor=false&extension=.js'></script> 
+
+                    <script> 
+                        google.maps.event.addDomListener(window, 'load', init);
+                        var map;
+                        function init() {
+                            var mapOptions = {
+                                center: new google.maps.LatLng(50.642041,21.001212),
+                                zoom: 5,
+                                zoomControl: true,
+                                disableDoubleClickZoom: true,
+                                mapTypeControl: true,
+                                mapTypeControlOptions: {
+                                    style: google.maps.MapTypeControlStyle.HORIZONTAL_BAR,
+                                },
+                                scaleControl: false,
+                                scrollwheel: false,
+                                panControl: false,
+                                streetViewControl: true,
+                                draggable : true,
+                                overviewMapControl: true,
+                                overviewMapControlOptions: {
+                                    opened: false,
+                                },
+                                mapTypeId: google.maps.MapTypeId.ROADMAP,
+                                styles: [
+                                {
+                                    "featureType": "all",
+                                    "elementType": "geometry.fill",
+                                    "stylers": [
+                                        {
+                                            "visibility": "on"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "featureType": "all",
+                                    "elementType": "geometry.stroke",
+                                    "stylers": [
+                                        {
+                                            "visibility": "on"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "featureType": "all",
+                                    "elementType": "labels.text",
+                                    "stylers": [
+                                        {
+                                            "visibility": "off"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "featureType": "all",
+                                    "elementType": "labels.text.fill",
+                                    "stylers": [
+                                        {
+                                            "visibility": "off"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "featureType": "all",
+                                    "elementType": "labels.text.stroke",
+                                    "stylers": [
+                                        {
+                                            "visibility": "off"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "featureType": "all",
+                                    "elementType": "labels.icon",
+                                    "stylers": [
+                                        {
+                                            "visibility": "off"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "featureType": "administrative",
+                                    "elementType": "labels",
+                                    "stylers": [
+                                        {
+                                            "visibility": "off"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "featureType": "administrative",
+                                    "elementType": "labels.text",
+                                    "stylers": [
+                                        {
+                                            "visibility": "off"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "featureType": "administrative",
+                                    "elementType": "labels.text.fill",
+                                    "stylers": [
+                                        {
+                                            "color": "#444444"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "featureType": "administrative",
+                                    "elementType": "labels.icon",
+                                    "stylers": [
+                                        {
+                                            "visibility": "off"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "featureType": "administrative.country",
+                                    "elementType": "all",
+                                    "stylers": [
+                                        {
+                                            "visibility": "on"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "featureType": "administrative.locality",
+                                    "elementType": "labels.text.stroke",
+                                    "stylers": [
+                                        {
+                                            "visibility": "off"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "featureType": "landscape",
+                                    "elementType": "all",
+                                    "stylers": [
+                                        {
+                                            "color": "#f2f2f2"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "featureType": "landscape.man_made",
+                                    "elementType": "all",
+                                    "stylers": [
+                                        {
+                                            "visibility": "off"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "featureType": "landscape.natural.landcover",
+                                    "elementType": "all",
+                                    "stylers": [
+                                        {
+                                            "visibility": "off"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "featureType": "landscape.natural.terrain",
+                                    "elementType": "all",
+                                    "stylers": [
+                                        {
+                                            "visibility": "off"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "featureType": "poi",
+                                    "elementType": "all",
+                                    "stylers": [
+                                        {
+                                            "visibility": "off"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "featureType": "poi.attraction",
+                                    "elementType": "all",
+                                    "stylers": [
+                                        {
+                                            "visibility": "on"
+                                        },
+                                        {
+                                            "weight": "0.64"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "featureType": "poi.park",
+                                    "elementType": "all",
+                                    "stylers": [
+                                        {
+                                            "visibility": "simplified"
+                                        },
+                                        {
+                                            "lightness": "19"
+                                        },
+                                        {
+                                            "saturation": "0"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "featureType": "poi.place_of_worship",
+                                    "elementType": "all",
+                                    "stylers": [
+                                        {
+                                            "visibility": "off"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "featureType": "road",
+                                    "elementType": "all",
+                                    "stylers": [
+                                        {
+                                            "saturation": -100
+                                        },
+                                        {
+                                            "lightness": 45
+                                        }
+                                    ]
+                                },
+                                {
+                                    "featureType": "road",
+                                    "elementType": "geometry",
+                                    "stylers": [
+                                        {
+                                            "visibility": "simplified"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "featureType": "road",
+                                    "elementType": "geometry.fill",
+                                    "stylers": [
+                                        {
+                                            "visibility": "on"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "featureType": "road",
+                                    "elementType": "geometry.stroke",
+                                    "stylers": [
+                                        {
+                                            "visibility": "on"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "featureType": "road",
+                                    "elementType": "labels",
+                                    "stylers": [
+                                        {
+                                            "visibility": "off"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "featureType": "road",
+                                    "elementType": "labels.text",
+                                    "stylers": [
+                                        {
+                                            "visibility": "on"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "featureType": "road",
+                                    "elementType": "labels.text.fill",
+                                    "stylers": [
+                                        {
+                                            "visibility": "off"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "featureType": "road",
+                                    "elementType": "labels.text.stroke",
+                                    "stylers": [
+                                        {
+                                            "visibility": "on"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "featureType": "road.highway",
+                                    "elementType": "all",
+                                    "stylers": [
+                                        {
+                                            "visibility": "simplified"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "featureType": "road.highway.controlled_access",
+                                    "elementType": "all",
+                                    "stylers": [
+                                        {
+                                            "visibility": "on"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "featureType": "road.highway.controlled_access",
+                                    "elementType": "geometry",
+                                    "stylers": [
+                                        {
+                                            "visibility": "off"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "featureType": "road.highway.controlled_access",
+                                    "elementType": "geometry.stroke",
+                                    "stylers": [
+                                        {
+                                            "visibility": "off"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "featureType": "road.highway.controlled_access",
+                                    "elementType": "labels.text",
+                                    "stylers": [
+                                        {
+                                            "visibility": "off"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "featureType": "road.highway.controlled_access",
+                                    "elementType": "labels.text.stroke",
+                                    "stylers": [
+                                        {
+                                            "visibility": "off"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "featureType": "road.arterial",
+                                    "elementType": "all",
+                                    "stylers": [
+                                        {
+                                            "visibility": "off"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "featureType": "road.arterial",
+                                    "elementType": "labels.icon",
+                                    "stylers": [
+                                        {
+                                            "visibility": "off"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "featureType": "road.local",
+                                    "elementType": "all",
+                                    "stylers": [
+                                        {
+                                            "visibility": "off"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "featureType": "transit",
+                                    "elementType": "all",
+                                    "stylers": [
+                                        {
+                                            "visibility": "off"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "featureType": "transit.line",
+                                    "elementType": "all",
+                                    "stylers": [
+                                        {
+                                            "visibility": "on"
+                                        },
+                                        {
+                                            "saturation": "0"
+                                        },
+                                        {
+                                            "lightness": "41"
+                                        },
+                                        {
+                                            "gamma": "1.27"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "featureType": "transit.station",
+                                    "elementType": "all",
+                                    "stylers": [
+                                        {
+                                            "visibility": "off"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "featureType": "transit.station.airport",
+                                    "elementType": "all",
+                                    "stylers": [
+                                        {
+                                            "visibility": "on"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "featureType": "transit.station.bus",
+                                    "elementType": "all",
+                                    "stylers": [
+                                        {
+                                            "visibility": "on"
+                                        },
+                                        {
+                                            "hue": "#ff0000"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "featureType": "transit.station.rail",
+                                    "elementType": "all",
+                                    "stylers": [
+                                        {
+                                            "visibility": "on"
+                                        },
+                                        {
+                                            "saturation": "23"
+                                        },
+                                        {
+                                            "lightness": "0"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "featureType": "water",
+                                    "elementType": "all",
+                                    "stylers": [
+                                        {
+                                            "color": "#d3f3f4"
+                                        },
+                                        {
+                                            "visibility": "on"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "featureType": "water",
+                                    "elementType": "labels",
+                                    "stylers": [
+                                        {
+                                            "visibility": "off"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "featureType": "water",
+                                    "elementType": "labels.text",
+                                    "stylers": [
+                                        {
+                                            "color": "#ffffff"
+                                        },
+                                        {
+                                            "weight": "0.01"
+                                        },
+                                        {
+                                            "visibility": "off"
+                                        }
+                                    ]
+                                }
+                            ],
+                            }
+                            var mapElement = document.getElementById('DS');
+                            var map = new google.maps.Map(mapElement, mapOptions);
+                            var locations = [
+                    ['Ukraine, Lviv', 'Dzherelna str., 38', '099 342 2312', 'dengo_systems@gmail.com', 
+                     'dengo-systems.com', 49.848940180483616, 24.021423609725957,
+                     'icons/ukraine_icon.png'],['Poland, Wrocław', 'Dengo Systems', 'undefined', 
+                    'undefined', 'dengo-systems.com', 51.1078852, 17.03853760000004, 
+                    'icons/poland_icon.png']
+                            ];
+                            for (i = 0; i < locations.length; i++) {
+                                if (locations[i][1] =='undefined'){ description ='';} else { description = locations[i][1];}
+                                if (locations[i][2] =='undefined'){ telephone ='';} else { telephone = locations[i][2];}
+                                if (locations[i][3] =='undefined'){ email ='';} else { email = locations[i][3];}
+                               if (locations[i][4] =='undefined'){ web ='';} else { web = locations[i][4];}
+                               if (locations[i][7] =='undefined'){ markericon ='';} else { markericon = locations[i][7];}
+                                marker = new google.maps.Marker({
+                                    icon: markericon,
+                                    position: new google.maps.LatLng(locations[i][5], locations[i][6]),
+                                    map: map,
+                                    title: locations[i][0],
+                                    desc: description,
+                                    tel: telephone,
+                                    email: email,
+                                    web: web
+                                });
+                    if (web.substring(0, 7) != "http://") {
+                    link = "http://" + web;
+                    } else {
+                    link = web;
+                    }
+                                bindInfoWindow(marker, map, locations[i][0], description, telephone, email, web, link);
+                         }
+                     function bindInfoWindow(marker, map, title, desc, telephone, email, web, link) {
+                          var infoWindowVisible = (function () {
+                                  var currentlyVisible = false;
+                                  return function (visible) {
+                                      if (visible !== undefined) {
+                                          currentlyVisible = visible;
+                                      }
+                                      return currentlyVisible;
+                                   };
+                               }());
+                               iw = new google.maps.InfoWindow();
+                               google.maps.event.addListener(marker, 'click', function() {
+                                   if (infoWindowVisible()) {
+                                       iw.close();
+                                       infoWindowVisible(false);
+                                   } else {
+                                       var html= "<div style='color:#000;background-color:#fff;padding:5px;width:150px;'><h4>"
+                                       +title+"</h4><p>"+desc+"<p><p>"+telephone+"<p><a href='mailto:"+email+"' >"
+                                       +email+"<a><a href='"+link+"'' >"+web+"<a></div>";
+                                       iw = new google.maps.InfoWindow({content:html});
+                                       iw.open(map,marker);
+                                       infoWindowVisible(true);
+                                   }
+                            });
+                            google.maps.event.addListener(iw, 'closeclick', function () {
+                                infoWindowVisible(false);
+                            });
+                     }
+                    }
+                    </script>
+                    <style>
+                        #DS {
+                            height:346px;
+                            width:100%;
+                        }
+                        .gm-style-iw * {
+                            display: block;
+                            width: 100%;
+                        }
+                        .gm-style-iw h4, .gm-style-iw p {
+                            margin: 0;
+                            padding: 0;
+                        }
+                        .gm-style-iw a {
+                            color: #4272db;
+                        }
+                    </style>
+
+                    <div id='DS'></div>
+    </div>
+    <section>
+            <div class="row resp">
+                <div class="col-lg-12 text-center stPro">
+                    <h1>Have a project? And Idea?</h1>
+                    <p>Let's make something awesome together.</p>
+                    <a href="project_page.html">
+                        <div class="startProject">
+                            S T A R T &nbsp; A &nbsp; P R O J E C T
+                        </div>
+                    </a>
+                </div>
+            </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="resp">
+        <div class="container">
+            <div class="row">
+                <div id="anchor_contact">
+                    <ul class="footNav">
+                       <li><a href="#anchor_home">HOME</a></li>
+                       <li>&nbsp;&nbsp;&nbsp; • &nbsp;&nbsp;&nbsp;</li>
+                       <li><a href="#anchor_services">SERVICE</a></li>
+                       <li>&nbsp;&nbsp;&nbsp; • &nbsp;&nbsp;&nbsp;</li>
+                       <li><a href="#anchor_works">WORKS</a></li>
+                       <li>&nbsp;&nbsp;&nbsp; • &nbsp;&nbsp;&nbsp;</li>
+                       <li><a href="#anchor_clients">CLIENTS</a></li>
+                       <li>&nbsp;&nbsp;&nbsp; • &nbsp;&nbsp;&nbsp;</li>
+                       <li><a href="contactUs.html">CONTACT US</a></li>
+                       <li>&nbsp;&nbsp;&nbsp; • &nbsp;&nbsp;&nbsp;</li>
+                       <li><a href="project_page.html">START A PROJECT</a></li>
+                     </ul>
+                </div>
+
+                <div style="font: 18px Raleway-Light; padding-top:25px;padding-bottom: 20px;"><span >Connect with us</span></div>
+                <div style="padding-bottom: 20px;"><span ><a href="dengo.systems@gmail.com">dengo.systems@gmail.com</a></span></div>
+                <div style="font: 18px Raleway-Light; padding-top:15px; padding-bottom: 20px;"><span >Follow us</span></div>
+                   
+                <div class="socialUS">
+                    <span class="icon-google-plus"></span>
+                    <span class="icon-facebook2"></span>
+                    <span class="icon-linkedin2"></span>
+                    <span class="icon-twitter"></span>
+                    <span class="icon-instagram"></span>
+                    <span class="icon-youtube3"></span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        $("#menu-close").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+
+    // Opens the sidebar menu
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+    </script>
+    </body>
+</html>
