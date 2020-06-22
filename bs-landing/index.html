@@ -37,11 +37,9 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-
 </head>
 
 <body id="page-top">
-
     <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -78,7 +76,7 @@
                     </li>
                     <li class="lang" id="lang-menu">
                         <a href="#" id="langCurrent" class="dropdown-toggle disp-none hidden-xs" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">EN<span class="caret"></span></a>
-                        <ul class="dropdown-menu ">
+                        <ul class="dropdown-menu">
                             <li style="margin-right:1px" class="langNonMove">
                                 <a href="#" id="m0">EN</a>
                             </li>
@@ -485,13 +483,16 @@
                     <h2 class="section-heading">У вас есть вопросы к нам?</h2><br>
                     <h4 class="section-heading">Напишите, и мы быстро вам ответим.</h4>
                     <div class="question-name">
-                        <input class="name" type="text" id="textinput" placeholder="Имя" required>
+                        <label for="textinput">
+                        <input class="name" type="text" id="textinput" placeholder="Имя" required></label>
                     </div>
                     <div>
-                        <input class="mail" type="email" id="email" placeholder="Email" required>
+                        <label for="email">
+                        <input class="mail" type="email" id="email" placeholder="Email" required></label>
                     </div>
                     <div class="question-mail">
-                        <textarea class="message" name="" id="textarea" cols="30" rows="1" placeholder="Сообщение"></textarea>
+                        <label for="textarea">
+                        <textarea class="message" name="" id="textarea" cols="30" rows="1" placeholder="Сообщение"></textarea></label>
                     </div>
                     <button id="singlebutton" class="page-scroll btn btn-send btn-xl sr-button">Отправить</button>
                 </div>
@@ -502,7 +503,6 @@
     <section class="bg-footer">
         <h6 class="section-heading">&copy; Copyright 2016 - <script>document.write(new Date().getFullYear());</script>, Booking Service</h6>
     </section>
-
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
