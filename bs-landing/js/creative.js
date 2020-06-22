@@ -146,3 +146,31 @@ $(window).scroll(function() {
         // $('.logo').css({'width':'initial','height':"initial"});
     }
 });
+
+// $("#lang-menu").hover(
+//     function(){
+//         $(this).addClass("cls-border-lang");
+//         $(this).children().eq(0).addClass("cls-borderbottom-lang");
+//         $("#lang-menu ul").stop().slideToggle(100);
+//     },
+//     function(){
+//         $(this).removeClass("cls-border-lang");
+//         $(this).children().eq(0).removeClass("cls-borderbottom-lang");
+//         $("#lang-menu ul").stop().slideToggle(100);
+//     }
+// );
+/// click languages
+$(document).ready(function () {
+
+    $("#lang-menu ul li a").on("click", function(){
+        //select lang and apply changes
+        // let langCurrent = $('#langCurrent').text();
+        let langCurrent = $('#langCurrent');
+        let langSelected = $(this).text();
+
+        $(langSelected).text(langCurrent);
+        $(langCurrent).text(langSelected);
+        $(langCurrent).append('<span class="caret"></span>');
+    });
+});
+

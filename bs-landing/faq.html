@@ -73,11 +73,26 @@
                 <li class="list-btn">
                     <a href="#" class="btn page-scroll btn-login-faq">Войти</a>
                 </li>
-                <li style="width: 50px">
-                    <select class="chosee-lang-faq" name="" id="" >
-                        <option value="">RU</option>
-                        <option value="">EN</option>
-                    </select>
+                <li class="lang" id="lang-menu">
+                    <a href="#" id="langCurrent" class="dropdown-toggle disp-none hidden-xs" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">EN<span class="caret"></span></a>
+                    <ul class="dropdown-menu ">
+                        <li style="margin-right:1px" class="langNonMove">
+                            <a href="#" id="m0">EN</a>
+                        </li>
+                        <li style="margin-right:1px" class="langNonMove">
+                            <a href="#" id="m1">RU</a>
+                        </li>
+                        <li style="margin-right:1px" class="langNonMove">
+                            <a href="#" id="m2">UA</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="none" style="text-align: center">
+                    <p style="padding-top:14px;" class="langHoverrr hidden-sm hidden-md hidden-lg">
+                        <a href="#" class="active">EN</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+                        <a href="#" id="b2">RU</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+                        <a href="#" id="b3">UA</a>
+                    </p>
                 </li>
             </ul>
         </div>
@@ -316,12 +331,8 @@
     </div>
     </div>
     <section class="bg-footer">
-        <h6 class="section-heading">© Copyright 2020, Booking Service</h6>
-        <!--        <h6 class="section-heading">&copy; Copyright 2016 - <?php echo date("Y"); ?>, Booking Service</h6>-->
+        <h6 class="section-heading">© Copyright 2016 - <script>document.write(new Date().getFullYear())</script>, Booking Service</h6>
     </section>
-
-
-
 
 <!-- jQuery -->
 <script src="js/jquery.js"></script>

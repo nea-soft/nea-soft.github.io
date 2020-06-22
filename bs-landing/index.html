@@ -76,30 +76,27 @@
                     <li class="list-btn">
                         <a href="#" class="btn btn-login page-scroll">Войти</a>
                     </li>
-                    <li style="width: 50px">
-                        <select class="chosee-lang" name="" id="" >
-                            <option value="">RU</option>
-                            <option value="">EN</option>
-                        </select>
+                    <li class="lang" id="lang-menu">
+                        <a href="#" id="langCurrent" class="dropdown-toggle disp-none hidden-xs" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">EN<span class="caret"></span></a>
+                        <ul class="dropdown-menu ">
+                            <li style="margin-right:1px" class="langNonMove">
+                                <a href="#" id="m0">EN</a>
+                            </li>
+                            <li style="margin-right:1px" class="langNonMove">
+                                <a href="#" id="m1">RU</a>
+                            </li>
+                            <li style="margin-right:1px" class="langNonMove">
+                                <a href="#" id="m2">UA</a>
+                            </li>
+                        </ul>
                     </li>
-<!--                    <li class="lang">-->
-<!--                        <a href="#" class="dropdown-toggle disp-none hidden-xs" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">EN<span class="caret"></span></a>-->
-<!--                        <ul class="dropdown-menu ">-->
-<!--                            <li style="margin-right:1px" class="langNonMove">-->
-<!--                                <a href="#" id="m1" value="RU">RU</a>-->
-<!--                            </li>-->
-<!--                            <li style="margin-right:1px" class="langNonMove">-->
-<!--                                <a href="#" id="m2" value="UA">UA</a>-->
-<!--                            </li>-->
-<!--                        </ul>-->
-<!--                    </li>-->
-<!--                    <li class="none" style="text-align: center">-->
-<!--                        <p style="padding-top:14px;" class="langHoverrr hidden-sm hidden-md hidden-lg">-->
-<!--                            <a style="color: #62a2ae !important;" href="" class="">EN</a>&nbsp;&nbsp;|&nbsp;&nbsp;-->
-<!--                            <a href="#" id="b2" value="RU" class="">RU</a>&nbsp;&nbsp;|&nbsp;&nbsp;-->
-<!--                            <a href="#" id="b3" value="UA" class="">UA</a>&nbsp;&nbsp;|&nbsp;&nbsp;-->
-<!--                        </p>-->
-<!--                    </li>-->
+                    <li class="none" style="text-align: center">
+                        <p style="padding-top:14px;" class="langHoverrr hidden-sm hidden-md hidden-lg">
+                            <a href="#" class="active">EN</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+                            <a href="#" id="b2">RU</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+                            <a href="#" id="b3">UA</a>
+                        </p>
+                    </li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -503,8 +500,7 @@
     </section>
 
     <section class="bg-footer">
-        <h6 class="section-heading">© Copyright 2020, Booking Service</h6>
-<!--        <h6 class="section-heading">&copy; Copyright 2016 - <?php echo date("Y"); ?>, Booking Service</h6>-->
+        <h6 class="section-heading">&copy; Copyright 2016 - <script>document.write(new Date().getFullYear());</script>, Booking Service</h6>
     </section>
 
 
