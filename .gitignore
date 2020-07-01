@@ -1,2 +1,29 @@
-.idea/*
+# dependencies
+node_modules
+
+# production
+dist
+.idea
+.firebase
+PSD
+
+# misc
 .DS_Store
+.DS_Store?
+._*
+
+npm-debug.log
+yarn-error.log
+yarn.lock
+.yarnclean
+.vscode
+
+# Packages #
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
