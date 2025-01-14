@@ -8,24 +8,31 @@
     <meta name="keywords" content="HTML, CSS, JS, React, React.JS, Wordpress, Site, Sites, Landing, Landing Page, Application, Applications, Design, PSD to HTML, Create, Create site from scratch, Create wordpress site from scratch">
     <title>NEA Soft - We Make Your Ideas Come True</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
         <div class="head-text">
             <img src="remade_1.png" alt="Logo">
-            <p class="head-text__title">We are currently working on something awesome. Stay tuned!</p>
+            <p class="head-text__title">We’re working on something new. Stay tuned, it will be worth it!</p>
         </div>
         <div class="contact-form">
-            <p class="contact-form__title">If you have project or proposition as for job for us, you can fill form below and get in touch with us</p>
-            <form id="register" role="form" action="https://nea-soft.github.io/mail.php" method="POST">
-                <label for="name"><input type="text" placeholder="Full Name" id="name" required></label>
-                <label for="theme"><input type="text" placeholder="Subject" id="theme" required></label>
-                <label for="mail"><input type="email" placeholder="Email" id="mail" required></label>
-                <label for="skype"><input type="text" placeholder="Skype" id="skype" required></label>
-                <label for="text"><textarea name="message" placeholder="Your Message" cols="30" rows="7" id="text" required></textarea></label>
-                <button id="singlebutton">Send</button>
-            </form>
+            <p class="contact-form__title">If you’d like to discuss a project or job opportunity, you can email us at the addresses below. We’ll respond promptly once we get your message.</p>
+<!--            <form id="register" role="form" action="https://nea-soft.github.io/mail.php" method="POST">-->
+<!--                <label for="name"><input type="text" placeholder="Full Name" id="name" required></label>-->
+<!--                <label for="theme"><input type="text" placeholder="Subject" id="theme" required></label>-->
+<!--                <label for="mail"><input type="email" placeholder="Email" id="mail" required></label>-->
+<!--                <label for="skype"><input type="text" placeholder="Skype" id="skype" required></label>-->
+<!--                <label for="text"><textarea name="message" placeholder="Your Message" cols="30" rows="7" id="text" required></textarea></label>-->
+<!--                <button id="singlebutton">Send</button>-->
+<!--            </form>-->
+            <div class="contact-form__links">
+                <a href="mailto:borodin.dev@gmail.com?subject=Job%20Opportunity"><img src="gmail_mail.webp" alt="gmail logo"></a>
+                <a href="mailto:borodin.dev@yahoo.com?subject=Job%20Opportunity"><img src="yahoo_mail.png" alt="yahoo logo"></a>
+            </div>
         </div>
     </div>
     <div id="screen"></div>
@@ -48,7 +55,6 @@
             <p>Something went wrong. Sorry for that, and please, try again.</p>
         </div>
     </div>
-
     <script type='text/javascript' src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script type='text/javascript' src="script.js"></script>
 </body>

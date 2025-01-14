@@ -1,21 +1,32 @@
-@font-face {
-    font-family: Raleway;
-    src: url('./Raleway-Regular.ttf');
-}
-@font-face {
-    font-family: 'Exo';
-    src: url('./Exo-Regular.otf');
-}
-*, :after, :before {
-    box-sizing: border-box;
-}
+/*@font-face {*/
+/*    font-family: Raleway;*/
+/*    src: url('./Raleway-Regular.ttf');*/
+/*}*/
+/*@font-face {*/
+/*    font-family: 'Exo';*/
+/*    src: url('./Exo-Regular.otf');*/
+/*}*/
+*, :after, :before { box-sizing: border-box; }
 body{
     margin: 0;
     padding: 0;
     background-image: url(naples-wallpaper-shadow.jpg);
     background-size: cover;
+    background-position: center;
+    animation: zoom-in-out 45s infinite ease-in-out;
     font-size: 16px;
-    font-family: Raleway, serif;
+    font-family: "Raleway", serif;
+}
+@keyframes zoom-in-out {
+    0% {
+        background-size: 100%; /* Початковий розмір фону */
+    }
+    50% {
+        background-size: 120%; /* Максимальний розмір фону через 5 секунд */
+    }
+    100% {
+        background-size: 100%; /* Повертається до початкового розміру через 10 секунд */
+    }
 }
 .container{
     width: 600px;
@@ -25,6 +36,7 @@ body{
     transform: translate(-50%,-50%);
     text-align: center;
 }
+.head-text img{ display: none; }
 .head-text__title{
     font-size: 30px;
     color: #fff;
@@ -32,6 +44,17 @@ body{
 .contact-form__title{
     font-size: 18px;
     color: #fff;
+}
+.contact-form__links{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+.contact-form__links a img{
+    max-width: 40px;
+    width: 100%;
+    height: auto;
 }
 form{
     width: 400px;
@@ -44,9 +67,7 @@ input{
     padding: 10px;
 }
 #name,
-#mail{
-    margin-right: 16px;
-}
+#mail{ margin-right: 16px; }
 button{
     width: 150px;
     border: none;
@@ -63,13 +84,8 @@ button{
     cursor: pointer;
 }
 button:focus {outline:0;}
-button:hover{
-    background-color: #3eab64;
-}
+button:hover{ background-color: #3eab64; }
 
-body img{
-    display: none;
-}
 textarea[name='message'] {
     resize: none;
     width: 100%;
@@ -102,9 +118,7 @@ input, textarea[name='message']::placeholder {
     z-index: 999999;
     position: absolute;
 }
-.modal-header{
-    height: 30px;
-}
+.modal-header{ height: 30px; }
 .modal-header__btn{
     width: 30px;
     height: 30px;
