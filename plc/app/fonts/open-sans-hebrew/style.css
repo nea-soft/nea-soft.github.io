@@ -1,0 +1,42 @@
+@font-face {
+    font-family: 'OpenSansHebrew Bold';
+    font-weight: bold;
+    font-style: normal;
+    src: url('OpenSansHebrew-Bold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'OpenSansHebrew ExtraBold';
+    font-weight: 800;
+    font-style: normal;
+    src: url('OpenSansHebrew-ExtraBold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'OpenSansHebrew ExtraBoldItalic';
+    font-weight: 800;
+    font-style: italic;
+    src: url('OpenSansHebrew-ExtraBoldItalic.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'OpenSansHebrew Italic';
+    font-weight: normal;
+    font-style: italic;
+    src: url('OpenSansHebrew-Italic.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'OpenSansHebrew Light';
+    font-weight: 300;
+    font-style: normal;
+    src: url('OpenSansHebrew-Light.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'OpenSansHebrew LightItalic';
+    font-weight: 300;
+    font-style: italic;
+    src: url('OpenSansHebrew-LightItalic.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'OpenSansHebrew Regular';
+    font-weight: normal;
+    font-style: normal;
+    src: url('OpenSansHebrew-Regular.ttf') format('truetype');
+}

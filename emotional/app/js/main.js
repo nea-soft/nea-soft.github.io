@@ -4,6 +4,7 @@ $(function(){
     $( closeMenu ).hide();
     $( ".menu" ).hide();
     $( ".hamburger" ).click(function() {
+		console.log('click');
         $( ".menu" ).slideToggle( "slow", function() {
             $( ".hamburger" ).hide();
             $( closeMenu ).show();
