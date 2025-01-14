@@ -1,0 +1,64 @@
+$primary-color: #ffa81e;
+$primary-bg-color: #191c25;
+
+@mixin small-title{
+  font: 1.25rem "OpenSansHebrew Regular", sans-serif;
+  color: rgba(0, 0, 0, 0.4);
+  text-transform: uppercase;
+  line-height: 1.8;
+  text-align: center;
+  padding: 125px 0 45px;
+  margin: 0;
+}
+@mixin big-title{
+  font: 3.125rem "OpenSansHebrew Bold", sans-serif;
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  line-height: 1.56;
+  text-align: center;
+  padding: 65px 0 75px;
+  margin: 0;
+}
+@mixin whatwedo-before-num{
+  position: absolute;
+  top: -45px;
+  right: -51px;
+  z-index: -1;
+  font: 8.5rem "MyriadHebrew Bold", sans-serif;
+  color: rgba(0, 0, 0, 0.051);
+  text-transform: uppercase;
+  line-height: 0.52;
+  text-align: center;
+}
+@mixin footer-input{
+  font: 1.125rem "OpenSansHebrew Regular", sans-serif;
+  border: 1px solid rgb(238, 238, 238);
+  color: rgb(17, 17, 17);
+  text-transform: uppercase;
+  line-height: 1.667;
+  border-radius: 5px;
+  background-color: rgba(255, 168, 30, 0);
+  max-width: 354px;
+  height: 64px;
+  padding-right: 40px;
+  margin: 0 10px;
+}
+@mixin input-icon-pos{
+  position: absolute;
+  right: 29px;
+  top: 23px;
+}
+@mixin footer-menu-info-icon{
+  font: 0.875rem "OpenSansHebrew Regular",sans-serif;
+  color: rgb(153, 153, 153);
+  line-height: 2;
+  span{ margin-right: 20px; }
+  a{
+    color: rgb(153, 153, 153);
+    transition: color .2s ease;
+    &:hover{
+      color: $primary-color;
+      text-decoration: none;
+    }
+  }
+}

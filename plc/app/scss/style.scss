@@ -1,0 +1,765 @@
+@import "vars";
+@import "libs";
+@import "fonts";
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+//.p35-0{ padding: 35px 0; }
+
+body{
+
+  direction: rtl;
+  .navbar-fixed {
+    background-color: $primary-bg-color !important;
+  }
+/* ============================================ *
+ * ================== HOME PAGE =============== *
+ * ============================================ */
+  .navbar {
+    height: 105px;
+    background-color: transparent;
+    border: none;
+    z-index: 999;
+    transition: background-color 1s ease 0s;
+    //&-brand{
+    //  margin-left: -10%;
+    //  margin-right: 10%;
+    //}
+    &-collapse{ justify-content: center; }
+    &-nav {
+      .nav-item{
+        margin: 0 30px;
+        .dropdown-toggle::after{ display: none; }
+        .dropdown-menu{
+          min-width: 7rem;
+          top: 30px;
+          right: -17px;
+          margin-top: 30px;
+          .dropdown-item{
+            transition: all .2s ease;
+            font: 1rem "OpenSansHebrew Regular", sans-serif;
+          }
+          .dropdown-item:hover,
+          .dropdown-item:focus {
+            color: $primary-color;
+            text-decoration: none;
+            background-color: rgba(255, 168, 30, 0.102);
+          }
+        }
+        .dropdown-menu:after{
+          content: '';
+          width: 0px;
+          height: 0px;
+          display: block;
+          border-left: 10px solid transparent;
+          border-right: 10px solid transparent;
+          border-bottom: 10px solid #ffffff;
+          border-top: 10px solid transparent;
+          position: absolute;
+          top: -20px;
+          left: 0;
+          right: 0;
+          margin: 0 auto;
+        }
+        .nav-link{
+          color: rgba(255, 255, 255, 0.502);
+          font: 1rem "OpenSansHebrew Regular", sans-serif;
+          text-transform: uppercase;
+          line-height: 1.875;
+          transition: color .5s ease;
+
+          &:hover{
+            color: $primary-color;
+            cursor: pointer;
+          }
+        }
+        .nav-btn{
+          border-style: solid;
+          border-width: 1px;
+          border-color: rgba(255,168,0 , .3);
+          border-radius: 5px;
+          background-color: rgba(255, 168, 30, 0);
+          line-height: 1.875;
+          text-align: center;
+          padding-left: 20px;
+          padding-right: 20px;
+          &:hover{
+            background-color: rgba(255, 168, 30, 1);
+            > span{
+              color: $white;
+            }
+          }
+          > span{
+            color: $primary-color;
+            font: 1.125rem "OpenSansHebrew Bold", sans-serif;
+            text-transform: uppercase;
+          }
+        }
+      }
+      .active {
+        .nav-link{ color: $primary-color !important; }
+      }
+    } //end .navbar-nav
+
+    /* Solid class attached on scroll past first section */
+    &.solid {
+      background-color: $primary-bg-color;
+      transition: background-color 1s ease 0s;
+
+      .navbar-nav {
+        > li {
+          > a {
+            color: rgba(255, 255, 255, 0.502);
+            transition: color 1s ease 0s;
+
+            &:hover {
+              color: $primary-color;
+              cursor: pointer;
+            }
+          }
+        }
+
+        .active {
+          .nav-link {
+            color: $primary-color;
+          }
+        }
+      }  //end scrolled .navbar-nav
+    }
+  }
+  /* ========== header banner ========== */
+  .header-banner {
+    background: url('../img/header-banner-bg.jpg') no-repeat center center;
+    background-size: cover;
+    //height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 300px;
+
+    // Header Banner Content
+    &__content{
+      width: 650px;
+      margin-top: 250px;
+      text-align: center;
+    }
+    &__title {
+      font: 5rem 'OpenSansHebrew ExtraBold', sans-serif;
+      color: rgb(255, 255, 255);
+      text-transform: uppercase;
+      line-height: 1.125;
+      text-align: center;
+    }
+    &__dscrpt{
+      font: 1.25rem 'OpenSansHebrew Regular', sans-serif;
+      color: rgba(255, 255, 255, 0.6);
+      text-transform: uppercase;
+      line-height: 1.8;
+      text-align: center;
+      margin: 50px 0;
+    }
+    &__btn{
+      font: 1.125rem 'OpenSansHebrew Bold', sans-serif;
+      color: rgb(255, 255, 255);
+      text-transform: uppercase;
+      line-height: 1.667;
+      text-align: center;
+      border-radius: 5px;
+      background-color: rgb(255, 168, 30);
+      box-shadow: 0 7px 25px 0px rgba(255, 168, 30, 0.51);
+      width: 192px;
+      height: 60px;
+    }
+
+    // Header Banner Clients
+    .clients{
+      margin-top: 100px;
+      text-align: center;
+      &-title{
+        font: 1.25rem "OpenSansHebrew Regular", sans-serif;
+        color: rgb(249, 249, 249);
+        text-transform: uppercase;
+        line-height: 3.9;
+        text-align: center;
+        letter-spacing: 3px;
+      }
+      &-logos{
+        direction: ltr;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        img{
+          margin: 0 40px;
+          width: 90px;
+        }
+      }
+    }
+  }
+  /* =========== work section ========== */
+  .work {
+    background-color: #f9f9f9;
+    text-align: center;
+    margin-top: -220px;
+
+    direction: rtl;
+
+    &-title {
+      position: relative;
+      font: 1.25rem "OpenSansHebrew Regular", sans-serif;
+      color: rgb(249, 249, 249);
+      text-transform: uppercase;
+      line-height: 3.9;
+      text-align: center;
+      letter-spacing: 3px;
+    }
+    &-blocks{
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      align-content: center;
+      flex-direction: row-reverse;
+    }
+    &-block {
+      background-color: rgb(255, 255, 255);
+      box-shadow: 0px 35px 49px 0px rgba(209, 209, 209, 0.2);
+      width: 260px;
+      height: 265px;
+      z-index: 178;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      img{ padding-bottom: 20px; }
+      p{
+        margin: 0;
+        padding: 20px 60px 0;
+        font: 1.25rem "OpenSansHebrew Bold", sans-serif;
+        color: rgb(0, 0, 0);
+        text-transform: uppercase;
+        line-height: 1.1;
+        text-align: center;
+      }
+    }
+  }
+  /* ======== what we do section ======= */
+  .whatwedo{
+    background-color: #f9f9f9;
+
+    .small-title{ @include small-title; }
+    .small-dscrpt{
+      max-width: 615px;
+      text-align: center;
+      margin: 0 auto;
+      font: 1.125rem "OpenSansHebrew Regular", sans-serif;
+      color: rgba(1, 1, 1, 0.4);
+      text-transform: uppercase;
+      line-height: 1.667;
+      text-align: center;
+    }
+    .big-title{ @include big-title; }
+  }
+  /* ======== services section ========= */
+  .services{
+    background-color: #f9f9f9;
+    padding-bottom: 150px;
+    .small-title{
+      @include small-title;
+      padding: 90px 0 20px;
+    }
+    .big-title{
+      @include big-title;
+      padding: 20px 0 90px;
+    }
+    &-info{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      flex-direction: row-reverse;
+      &__block{
+        display: block;
+        position: relative;
+        z-index: 9;
+        img{ transition: all .3s linear; }
+        p{
+          display: block;
+          text-align: right;
+          font: 1.25rem "OpenSansHebrew Bold", sans-serif;
+          color: rgb(0, 0, 0);
+          text-transform: uppercase;
+          line-height: 1.1;
+          transition: color .3s linear;
+          margin-top: 25px;
+          span{ display: block; }
+        }
+        &:hover{
+          text-decoration: none;
+          img{ box-shadow: 0 17px 21px 0 rgba(70, 70, 70, 0.24);  }
+          p{
+            text-decoration: none;
+            color: $primary-color;
+          }
+        }
+        &:nth-last-child(-n+3){ margin-top: 70px; }
+      }
+      .block-one:before{
+        content: '01';
+        @include whatwedo-before-num;
+      }
+      .block-two:before{
+        content: '02';
+        @include whatwedo-before-num;
+      }
+      .block-three:before{
+        content: '03';
+        @include whatwedo-before-num;
+      }
+      .block-four:before{
+        content: '04';
+        @include whatwedo-before-num;
+      }
+      .block-five:before{
+        content: '05';
+        @include whatwedo-before-num;
+      }
+      .block-six:before{
+        content: '06';
+        @include whatwedo-before-num;
+      }
+    }
+  }
+  /* ========= footer section ========== */
+  .footer{
+    background-color: $primary-bg-color;
+    &-form{
+      position: relative;
+      top: -100px;
+      background-color: rgb(255, 255, 255);
+      width: 100%;
+      .custom-file{
+        display: flex;
+        width: 300px;
+        margin: 0 auto;
+        padding: 45px 0;
+        &-input:focus ~ .custom-file-label{
+          border: none;
+          box-shadow: unset;
+        }
+        &-label{
+          background: none;
+          border: none;
+          font: 2.35775rem "OpenSansHebrew Regular", sans-serif;
+          line-height: 1.4;
+          &:hover{
+            cursor: pointer;
+          }
+          &::after {
+            content: url('../img/form-upload-icon.png') !important;
+            background: none;
+            border: none;
+            top: -3.5px;
+          }
+        }
+      }
+      .form-row{
+        height: 185px;
+        padding: 0 25px;
+      }
+      input#inlineFormInputGroupUsername,
+      input#inlineFormInputGroupPhone,
+      input#inlineFormInputGroupMail{
+        @include footer-input;
+        max-width: 320px;
+        margin: 0 auto;
+      }
+      input#inlineFormInputGroupUsername::placeholder,
+      input#inlineFormInputGroupPhone::placeholder,
+      input#inlineFormInputGroupMail::placeholder{
+        font: 1.125rem "OpenSansHebrew Regular",sans-serif;
+        color: rgb(205, 205, 205);
+        text-transform: uppercase;
+        line-height: 1.667;
+      }
+      input#inlineFormInputGroupUsername:active,
+      input#inlineFormInputGroupUsername:focus,
+      input#inlineFormInputGroupPhone:active,
+      input#inlineFormInputGroupPhone:focus,
+      input#inlineFormInputGroupMail:active,
+      input#inlineFormInputGroupMail:focus{
+        border: 1px solid $primary-color;
+        outline: none;
+        box-shadow: none;
+      }
+      .form-phone-icon{
+        content: url('../img/form-phone-icon.png');
+        width: 16px;
+        height: 22px;
+        right: 32px;
+        @include input-icon-pos;
+      }
+      .form-user-icon{
+        content: url('../img/form-user-icon.png');
+        width: 20px;
+        height: 20px;
+        right: 32px;
+        @include input-icon-pos;
+      }
+      .form-mail-icon{
+        content: url('../img/form-mail-icon.png');
+        width: 20px;
+        height: 16px;
+        @include input-icon-pos;
+        top: 25px;
+      }
+      input#inlineFormInputGroupPhone:focus + .form-phone-icon { content: url('../img/form-phone-icon-hover.png'); }
+      input#inlineFormInputGroupUsername:focus + .form-user-icon { content: url('../img/form-user-icon-hover.png'); }
+      input#inlineFormInputGroupMail:focus + .form-mail-icon { content: url('../img/form-mail-icon-hover.png'); }
+      &__btn button{
+        border-radius: 5px;
+        background-color: rgb(255, 168, 30);
+        box-shadow: 0px 7px 25px 0px rgba(255, 168, 30, 0.51);
+        width: 192px;
+        height: 60px;
+        font: 1.125rem "OpenSansHebrew Regular", sans-serif;
+        color: rgb(255, 255, 255);
+        text-transform: uppercase;
+        line-height: 1.667;
+        text-align: center;
+        margin-right: 30px;
+      }
+    }
+    .menu-row__logo{
+      text-align: right;
+      padding: 0 30px 0 20px;
+      p{
+        font: 0.8125rem "OpenSansHebrew Regular", sans-serif;
+        color: rgb(153, 153, 153);
+        line-height: 1.769;
+        text-align: right;
+        margin: 25px 0 0;
+      }
+    }
+    .menu-row__list{
+      ul{
+        list-style: none;
+        padding: 0;
+        li{
+          text-align: right;
+          a{
+            font: 0.875rem "OpenSansHebrew Regular", sans-serif;
+            color: rgb(153, 153, 153);
+            line-height: 2.857;
+            transition: color .2s linear;
+            &:hover{
+              color: $primary-color;
+              text-decoration: none;
+            }
+          }
+        }
+      }
+    }
+    .menu-row__info{
+      .info-address{
+        text-align: right;
+
+        @include footer-menu-info-icon;
+      }
+      .info-mail{
+        text-align: right;
+        margin: 40px 0;
+        @include footer-menu-info-icon;
+      }
+      .info-phone{
+        text-align: right;
+        @include footer-menu-info-icon;
+      }
+    }
+    .copyright{
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row-reverse;
+      align-items: center;
+      padding: 60px 0 45px;
+      p{ margin: 0; }
+      .copyright-rights{
+        font: 0.875rem "OpenSansHebrew Regular", sans-serif;
+        color: rgb(153, 153, 153);
+        line-height: 1.571;
+        text-align: right;
+      }
+      .copyright-developed{
+        display: flex;
+        align-items: baseline;
+        span{
+          font: 0.8125rem "OpenSansHebrew Regular", sans-serif;
+          color: rgb(153, 153, 153);
+          line-height: 1.769;
+          text-align: left;
+          margin-right: 15px;
+        }
+      }
+    }
+  }
+
+/* ============================================ *
+ * ================== ABOUT PAGE ============== *
+ * ============================================ */
+  .about-banner{
+    background: url('../img/about-banner-bg.png') no-repeat center center;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 100px;
+
+    &__content {
+      width: 650px;
+      margin-top: 175px;
+      text-align: center;
+    }
+  }
+  .about-info{
+    padding: 110px 135px;
+    &__images{
+      &-row1{
+        position: relative;
+        text-align: center;
+        img:first-child{
+          max-height: 304px;
+          margin-left: 4px;
+          position: relative;
+          top: -35px;
+        }
+        img:last-child{
+          position: relative;
+          top: 65px;
+          max-width: 204px;
+          margin-right: 15px;
+        }
+      }
+      &-row2{
+        position: relative;
+        text-align: center;
+        img:first-child{
+          max-width: 218px;
+          margin-left: 2px;
+          position: relative;
+          top: -45px;
+        }
+        img:last-child{
+          max-width: 290px;
+          margin-right: 15px;
+        }
+      }
+    }
+    &__content{
+      padding: 0 40px;
+      h3.content-title{
+        text-align: center;
+        font: 2.625rem "OpenSansHebrew Bold", sans-serif;
+        line-height: 1.4;
+      }
+      p.content-dscrpt{
+        font: 1.3125rem "OpenSansHebrew Regular", sans-serif;
+        color: rgb(179, 179, 179);
+        line-height: 1.657;
+        text-align: justify;
+      }
+    }
+  }
+  .about-footer{ padding-top: 75px; }
+/* ============================================ *
+ * ================= UPLOAD PAGE ============== *
+ * ============================================ */
+  .upload-content{
+    padding: 175px 0;
+    background-color: #f9f9f9;
+    &__short{
+      font: 1.278625rem "OpenSansHebrew Regular", sans-serif;
+      color: rgb(179, 179, 179);
+      line-height: 1.32;
+      text-align: center;
+    }
+    &__title{
+      font: 3.8623125rem "OpenSansHebrew Bold", sans-serif;
+      line-height: 1.437;
+      text-align: center;
+      margin: 20px 0;
+    }
+    &__dscrpt{
+      display: flex;
+      .dscrpt {
+        padding: 0 107px;
+        text-align: right;
+        &-title {
+          font: 1.375rem "OpenSansHebrew Regular", sans-serif;
+          line-height: 1.4;
+        }
+        &-txt {
+          font: 1.3125rem "OpenSansHebrew Regular", sans-serif;
+          color: rgb(179, 179, 179);
+          line-height: 1.467;
+          text-align: justify;
+        }
+      }
+    }
+    &__formats{
+        font: 1.3125rem "OpenSansHebrew Regular", sans-serif;
+        line-height: 1.467;
+        text-align: right;
+        padding: 0 100px;
+    }
+    &__instruction{
+      font: 1.3125rem "OpenSansHebrew Bold", sans-serif;
+      color: rgb(255, 168, 30);
+      line-height: 1.467;
+      text-align: right;
+      padding: 0 100px;
+      margin-bottom: 50px;
+    }
+  }
+  .upload-form{
+    top: -175px;
+    padding: 35px 0;
+    margin-bottom: -100px;
+  }
+/* ============================================ *
+ * ================= CONTACT PAGE ============= *
+ * ============================================ */
+  .navbar-fixed.bg-transparent{
+    background-color: transparent !important;
+    border-bottom: 1px solid #dedede;
+    .nav-item{
+      a{color: #46484f; }
+    }
+  }
+  .contact-content{
+    padding: 175px 0 35px;
+    background-color: #f9f9f9;
+    &__title{
+      font: 3.8623125rem "OpenSansHebrew Bold", sans-serif;
+      line-height: 1.437;
+      text-align: center;
+      margin: 20px 0;
+    }
+  }
+  .contact-footer {
+    background: linear-gradient(180deg, rgba(249, 249, 249, 1) 43%, rgba(25, 28, 37, 1) 43%);
+    .footer-contact {
+      padding: 69px 90px 60px;
+      margin-bottom: 60px;
+      background-color: #ffffff;
+
+      .contact-form {
+        top: 0;
+
+        .form-row { height: 100%; }
+        input#inlineFormInputGroupMail { max-width: 100%; }
+        textarea#inlineFormTextareaMessage {
+          resize: none;
+          padding-right: 60px;
+          padding-top: 19px;
+        }
+        textarea#inlineFormTextareaMessage::placeholder {
+          font: 1.125rem "OpenSansHebrew Regular", sans-serif;
+          color: rgb(205, 205, 205);
+          text-transform: uppercase;
+          line-height: 1.667;
+        }
+
+        #inlineFormTextareaMessage:active,
+        #inlineFormTextareaMessage:focus {
+          border: 1px solid $primary-color;
+          outline: none;
+          box-shadow: none;
+        }
+
+        .form-msg-icon {
+          content: url('../img/form-message-icon.png');
+          width: 20px;
+          height: 20px;
+          @include input-icon-pos;
+          top: 25px;
+        }
+
+        #inlineFormTextareaMessage:focus + .form-msg-icon {
+          content: url('../img/form-message-icon-hover.png');
+        }
+
+        .footer-form__btn {
+          margin-top: 35px;
+        }
+      }
+
+      .contact-info {
+        &__icon {
+          margin: 5px 20px 0 50px;
+        }
+
+        &__dscrpt {
+          margin-bottom: 54px;
+
+          .title {
+            font: 1.375rem "OpenSansHebrew Regular", sans-serif;
+            line-height: 1.4;
+            margin: 0;
+          }
+
+          .description {
+            font: 1.3125rem "OpenSansHebrew Regular", sans-serif;
+            color: rgb(179, 179, 179);
+            line-height: 1.467;
+          }
+        }
+      }
+    }
+  }
+/* ============================================ *
+ * =============== PORTFOLIO PAGE ============= *
+ * ============================================ */
+  .portfolio-content{
+    padding: 175px 0 35px;
+    background-color: #f9f9f9;
+    &__title{
+      font: 3.8623125rem "OpenSansHebrew Bold", sans-serif;
+      line-height: 1.437;
+      text-align: center;
+      margin: 20px 0;
+    }
+    &__subtitle{
+      font: 1.3125rem "OpenSansHebrew Regular", sans-serif;
+      color: rgb(179, 179, 179);
+      line-height: 1.467;
+      text-align: justify;
+      margin: 0 auto;
+      padding: 0 135px;
+    }
+  }
+/* ============================================ *
+ * ================ THANKS PAGE =============== *
+ * ============================================ */
+  .thanks-content{
+    padding: 175px 0 35px;
+    background-color: #f9f9f9;
+    &__title{
+      font: 3.8623125rem "OpenSansHebrew Bold", sans-serif;
+      line-height: 1.437;
+      text-align: center;
+      margin: 20px 0;
+    }
+    &__subtitle{
+      font: 1.5125rem "OpenSansHebrew Regular", sans-serif;
+      color: rgb(179, 179, 179);
+      line-height: 1.467;
+      text-align: justify;
+      margin: 0 auto;
+      padding: 0 135px;
+    }
+  }
+}
+
+
+@import "media";
